@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<!--th:fragment allows the portion to be reused-->
+<head th:fragment="head">
+    <meta charset="UTF-8" />
+    <title th:text="${title}">My Cheeses</title>
+<!--    The @ here will find where the file is in my server so I don't have
+to worry about where exactly those directories are-->
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+    <script type="text/javascript" th:src="@{/js/script.js}"></script>
+</head>
+<body>
+
+<nav th:fragment="navigation">
+    <a href="/cheese">List</a>
+    <a href="/cheese/add>"></a>
+</nav>
+</body>
+</html>

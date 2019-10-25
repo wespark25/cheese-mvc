@@ -31,6 +31,17 @@ public class CheeseController {
     @RequestMapping(value = "add", method = RequestMethod.POST)
     public String proccessAddCheeseForm(@RequestParam String cheeseName) {
         cheeses.add(cheeseName);
+//        Redirect here will just take you too the root unless you specify an address afterwards
         return "redirect:";
     }
 }
+
+
+
+
+
+
+
+
+
+
